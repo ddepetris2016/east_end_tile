@@ -1,0 +1,11 @@
+project,project_type,material,design,description,square_feet,home_type,image,user_id,created_at,updated_at
+1,Bathroom,Ceramic,Standard,,200,Existing Home,,1,,
+2,Bathroom,Glass,Brick,,250,New Home,,2,,
+3,Bathroom,Limestone,Diagonal,,300,Apartment,,3,,
+4,Bathroom,Marble,Standard,,350,New Home,,1,,
+5,Bathroom,Ceramic,Brick,,400,Existing Home,,2,,
+6,Kitchen,Glass,Diagonal,,450,New Home,,3,,
+7,Kitchen,Limestone,Standard,,500,Apartment,,2,,
+8,Kitchen,Marble,Brick,,550,Existing Home,,1,,
+9,Kitchen,Ceramic,Diagonal,,600,New Home,,3,,
+10,Kitchen,Glass,Standard,,650,Apartment,,1,,

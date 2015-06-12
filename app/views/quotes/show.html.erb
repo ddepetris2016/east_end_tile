@@ -1,0 +1,53 @@
+<!-- Responsive panel example-->
+
+<div class="row">
+  <div class="col-sm-offset-1 col-sm-10 col-md-offset-2 col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Quote #<%= @quote.id %></h3>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-12">
+            <dl class="dl-horizontal">
+              <dt>Project</dt>
+              <dd><%= @quote.project_id %></dd>
+
+              <dt>User</dt>
+              <dd><%= @quote.user_id %></dd>
+
+              <dt>Total Cost</dt>
+              <dd><%= number_to_currency(@quote.amount) %></dd>
+
+              <dt>Labor Cost</dt>
+              <dd><%= number_to_currency(@quote.labor) %></dd>
+
+              <dt>Material Cost</dt>
+              <dd><%= number_to_currency(@quote.material) %></dd>
+
+            </dl>
+            <div class="btn-group btn-group-justified">
+              <a href="/quotes" class="btn btn-primary">
+                <i class="fa fa-chevron-left"></i>
+              </a>
+
+              <% if current_user.user_type == "Admin" %>
+
+              <a href="/quotes/<%= @quote.id %>/edit" class="btn btn-warning">
+                <i class="fa fa-edit"></i>
+              </a>
+
+              <a href="/delete_quote/<%= @quote.id %>" class="btn btn-danger" rel="nofollow">
+                <i class="fa fa-trash-o"></i>
+              </a>
+              <% end %>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End responsive panel example -->
